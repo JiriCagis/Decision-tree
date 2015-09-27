@@ -6,13 +6,31 @@ A decision tree is a decision support tool that uses a tree-like graph or model 
 Decision trees are commonly used in operations research, specifically in decision analysis, to help identify a strategy most likely to reach a goal.<br>
 https://en.wikipedia.org/wiki/Decision_tree
 
-<h3> Describe our case </h3>
+<h3> Describe our algorithm </h3>
 Algorithm represent n-arity decision tree for vocation rules in table about weather.
 On top tree is partition by attribute "Outlook", in another floor divide by attribute 
 "Humidity", another floor divide by attribute "Windy" and last floor divide by attribute "Temperature". Tree is scan downwards and in each floor extended search filter add attribute.
 <br>
- Example: On start records are divide by column "Outlook". If rows with value sunny in column "outlook"
- have all same value in column play write this filter as rule. In next step filter divide rows by two
- attributes "outlook" and "humidity". For another passage tree to depth is filter extended with attributes.
- 
- <h3> Sketch graph </h3>
+<br>
+Example: On start records are divide by column "Outlook". If rows with value sunny in column "outlook"
+have all same value in column play write this filter as rule. In next step filter divide rows by two
+attributes "outlook" and "humidity". For another passage tree to depth is filter extended with attributes.
+
+<pre>
+                                          ____________
+                                          -   ROOT   -
+                                          -          -
+                                          ------------
+                                      *         *       *
+                                   *            *            *
+                                *               *                * 
+                     _________*__          _____*______         ____*_______
+                     -  SUNNY   -          - OVERCAST -         -  RAINY   - 
+                     -          -          -          -         -          -
+                     ------------          ------------         ------------
+                 *         *       *
+               *           *           *
+        _____*__       ____*___      _____*__
+        - HIGH -       -NORMAL-      - LOW  -
+        --------       --------      --------
+ </pre>
