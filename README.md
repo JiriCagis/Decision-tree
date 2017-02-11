@@ -30,7 +30,7 @@ On top tree is partition by attribute "Outlook", in another floor divide by attr
 "Humidity", another floor divide by attribute "Windy" and last floor divide by attribute "Temperature". Tree is scan downwards and in each floor extended search filter add attribute.
 <br>
 <br>
-<u>Example:</u>On start records are divide by column "Outlook". If rows with value sunny in column "outlook"
+<b>Example:</b> On start records are divide by column "Outlook". If rows with value sunny in column "outlook"
 have all same value in column play write this filter as rule. In next step filter divide rows by two
 attributes "outlook" and "humidity". For another passage tree to depth is filter extended with attributes.
 
